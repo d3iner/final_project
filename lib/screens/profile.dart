@@ -77,7 +77,10 @@ class _ProfileState extends State<Profile> {
             ElevatedButton(onPressed: (){
               FirebaseAuth.instance.signOut();
               Navigator.of(context).pushNamed("/login");
-            }, child: const Text('Log out'))
+            }, child: const Text('Log out')),
+            user!.isAdmin ? ElevatedButton(onPressed: (){
+              Navigator.of(context).pushNamed("/users");
+            }, child: const Text('Editar usuario')) : const SizedBox()
           ],)
         ],
       ),)

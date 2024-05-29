@@ -1,5 +1,6 @@
 import 'package:final_project/screens/admin/addBook.dart';
 import 'package:final_project/screens/admin/updateBook.dart';
+import 'package:final_project/screens/admin/updateUser.dart';
 import 'package:final_project/screens/auth/login.dart';
 import 'package:final_project/screens/auth/register.dart';
 import 'package:final_project/screens/bookDetails.dart';
@@ -33,6 +34,7 @@ class MainApp extends StatelessWidget {
         '/register': (context) =>  const Register(),
         '/': (context) => const Home(),
         '/profile': (context) => const Profile(),
+        '/users': (context) => const UpdateUser(),
         '/book/add': (context) => const AddBook(),
         '/book/update': (context) => const UpdateBook(),
         '/book': (context) => const BookDetails()
